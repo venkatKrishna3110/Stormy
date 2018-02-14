@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void run() {
                                     updateDisplay();
+                                    //Toast.makeText(MainActivity.this, mCurrentWeather.getFormattedTime()+"", Toast.LENGTH_LONG).show();
                                 }
                             });
 
@@ -104,10 +105,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateDisplay() {
 
-        //mTemperatureLabel.setText(mCurrentWeather.getTemperature()+"");
-      //  mTimeLabel.setText("At "+mCurrentWeather.getFormattedTime()+" it will be ");
-      //  mHumidityValue.setText((int) mCurrentWeather.getHumidity()+"");
-      //  mPrecipValue.setText(mCurrentWeather.getPrecipChance()+"%");
+        mTemperatureLabel.setText(mCurrentWeather.getTemperature()+"");
+        mTimeLabel.setText("At "+mCurrentWeather.getFormattedTime()+" it will be ");
+        mHumidityValue.setText((int) mCurrentWeather.getHumidity()+"");
+        mPrecipValue.setText(mCurrentWeather.getPrecipChance()+"%");
         mSummaryLabel.setText(mCurrentWeather.getSummary());
 
         Drawable drawable = getResources().getDrawable(mCurrentWeather.getIconId());
