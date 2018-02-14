@@ -7,6 +7,22 @@
     android:background="@color/bgcolor"
     tools:context="com.example.vuesol.stormy.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/refreshImage"
+        android:src="@drawable/refresh"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/refreshImage"
+        android:layout_centerHorizontal="true"/>
+
     <TextView
         android:id="@+id/labelTemperature"
         android:layout_width="wrap_content"
