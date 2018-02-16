@@ -1,4 +1,6 @@
-package com.example.vuesol.stormy;
+package com.example.vuesol.stormy.weather;
+
+import com.example.vuesol.stormy.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,7 +10,7 @@ import java.util.TimeZone;
  * Created by vuesol on 2/12/18.
  */
 
-public class CurrentWeather {
+public class Current {
 
     private String mIcon;
     private Long mTime;

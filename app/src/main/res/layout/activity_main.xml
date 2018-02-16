@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="32dp"
-    android:background="@color/bgcolor"
-    tools:context="com.example.vuesol.stormy.MainActivity">
+    android:paddingTop="32dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:background="@drawable/bg_gradient"
+    tools:context="com.example.vuesol.stormy.ui.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -29,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="100"
+        android:text="--"
         android:textColor="@android:color/white"
         android:textSize="150sp" />
     <ImageView
@@ -99,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/valueHumidity"
                 android:textColor="@android:color/white"
-                android:text="0.88"
+                android:text="--"
                 android:textSize="24sp"
                 android:layout_gravity="center_horizontal"/>
         </LinearLayout>
@@ -124,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/valuePrecip"
                 android:textColor="@android:color/white"
-                android:text="100%"
+                android:text="--"
                 android:textSize="24sp"
                 android:layout_gravity="center_horizontal"/>
 
@@ -136,12 +138,38 @@
         android:id="@+id/labelSummary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayoutOut"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp"
         android:gravity="center_horizontal"
         android:text="Stormy with a chance of meatballs"
         android:textColor="@android:color/white"
         android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/labelSummary">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hourlyButton"
+            android:background="#40ffffff"
+            android:text="HOURLY"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dailyButton"
+            android:background="#40ffffff"
+            android:text="7 Day"
+            android:textColor="#ffffffff"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
 
 </RelativeLayout>

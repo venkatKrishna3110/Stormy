@@ -1,10 +1,12 @@
-package com.example.vuesol.stormy;
+package com.example.vuesol.stormy.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.os.Bundle;
+
+import com.example.vuesol.stormy.R;
 
 /**
  * Created by vuesol on 2/9/18.
